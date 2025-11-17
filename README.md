@@ -1,4 +1,4 @@
-# gt-central
+# SpringTales
 
 This website contains some infographics I made for the game "Guardian Tales":
 - Raid Recorded Runs - Top recorded runs for each raid season.
