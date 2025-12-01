@@ -48,7 +48,7 @@ a {
 }
 
 /* Partitions */
-.top {
+body .top {
   border-bottom: 1px solid #b3b3b3;
   background-color: #121212;
   position: sticky;
@@ -150,4 +150,74 @@ h1.city {
   width: 23rem;
   height: auto;
   border: 1px solid #f8f8f8;
+}
+
+/* Infographic Maker */
+.infographic-maker {
+  background-color: #181818;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+  align-items: flex-start;
+  border-radius: 1rem;
+}
+
+.heroes,
+.weapons,
+.accessories,
+.relics {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.boss,
+.weapon-icon,
+.accessory-icon,
+.card-icon,
+.relic-icon {
+  height: 4rem;
+  width: 4rem;
+  background-color: black;
+  margin-bottom: 0.4rem;
+}
+
+.hero,
+.weapon,
+.accessory,
+.relic {
+  height: 4rem;
+  width: 4rem;
+  background-color: black;
+}
+
+.popup-shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: #181818;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }

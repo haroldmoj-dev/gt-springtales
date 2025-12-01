@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/index.js" defer></script>
+    <script src="../js/infographic.js" defer></script>
     <title>SpringTales - Infographic Maker</title>
   </head>
+
+  <div id="asset-popup" class="popup-shadow">
+    <div class="popup">
+      <h2 id="asset-popup-title">Select Image</h2>
+      <div id="asset-image-list" class="image-list"></div>
+    </div>
+  </div>
+
   <body>
     <div class="top">
       <div class="navbar">
@@ -24,6 +32,87 @@
     </div>
     <div class="province">
       <h1 class="city">Infographic Maker</h1>
+      <div class="city">
+        <div class="infographic-maker">
+          <div class="left">
+            <div class="boss"></div>
+            <div
+              class="weapon-icon"
+              data-asset="Weapon"
+              data-folder="weapon"
+            ></div>
+            <div
+              class="accessory-icon"
+              data-asset="Accessory"
+              data-folder="accessory"
+            ></div>
+            <div class="card-icon"></div>
+            <div
+              class="relic-icon"
+              data-asset="Relic"
+              data-folder="relic"
+            ></div>
+          </div>
+          <div class="right">
+            <div class="heroes">
+              <div class="hero" data-asset="Hero" data-folder="hero"></div>
+              <div class="hero" data-asset="Hero" data-folder="hero"></div>
+              <div class="hero" data-asset="Hero" data-folder="hero"></div>
+              <div class="hero" data-asset="Hero" data-folder="hero"></div>
+            </div>
+            <div class="weapons">
+              <div
+                class="weapon"
+                data-asset="Weapon"
+                data-folder="weapon"
+              ></div>
+              <div
+                class="weapon"
+                data-asset="Weapon"
+                data-folder="weapon"
+              ></div>
+              <div
+                class="weapon"
+                data-asset="Weapon"
+                data-folder="weapon"
+              ></div>
+              <div
+                class="weapon"
+                data-asset="Weapon"
+                data-folder="weapon"
+              ></div>
+            </div>
+            <div class="accessories">
+              <div
+                class="accessory"
+                data-asset="Accessory"
+                data-folder="accessory"
+              ></div>
+              <div
+                class="accessory"
+                data-asset="Accessory"
+                data-folder="accessory"
+              ></div>
+              <div
+                class="accessory"
+                data-asset="Accessory"
+                data-folder="accessory"
+              ></div>
+              <div
+                class="accessory"
+                data-asset="Accessory"
+                data-folder="accessory"
+              ></div>
+            </div>
+            <div class="relics">
+              <div class="relic" data-asset="Relic" data-folder="relic"></div>
+              <div class="relic" data-asset="Relic" data-folder="relic"></div>
+              <div class="relic" data-asset="Relic" data-folder="relic"></div>
+              <div class="relic" data-asset="Relic" data-folder="relic"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

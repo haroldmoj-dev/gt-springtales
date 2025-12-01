@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function hamburgerFunc() {
   const hamburger = document.querySelector(".hamburger");
   const rightMenu = document.querySelector(".navbar .right");
 
@@ -12,4 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
       rightMenu.classList.remove("active");
     }
   });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  hamburgerFunc();
 });
