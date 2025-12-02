@@ -190,6 +190,7 @@ h1.city {
 .relic {
   height: 4rem;
   width: 4rem;
+  cursor: pointer;
   background-color: black;
 }
 
