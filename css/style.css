@@ -118,7 +118,13 @@ a {
 }
 
 /* Partitions */
-body .top {
+.whole {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.whole .top {
   border-bottom: 1px solid #b3b3b3;
   background-color: #181818;
   position: sticky;
@@ -146,10 +152,21 @@ body .top {
   font-weight: bold;
 }
 
-.middle {
+.whole .middle {
   width: 95%;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.whole .bottom {
+  padding: 2rem;
+  text-align: center;
+  margin-top: auto;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 1),
+    rgba(194, 168, 120, 0.1)
+  );
 }
 
 h1 {
@@ -190,7 +207,7 @@ h1 {
 @media (min-width: 640px) {
   .navbar,
   .middle {
-    width: 85%;
+    max-width: 85%;
   }
 }
 
@@ -209,27 +226,28 @@ h1 {
 }
 
 /* Home Tab */
-.home.container {
+.home.right {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
-  margin: 1.5rem 0;
+  margin: 3rem 0;
   justify-content: center;
 }
 
-.home.container a {
-  font-size: 0.8rem;
+.home.right a {
   color: #b3b3b3;
 }
 
 .home .card {
-  border: 1px solid #b3b3b3;
-  height: 200px;
-  width: 200px;
-  border-radius: 8px;
-  padding: 1rem;
+  height: 20rem;
+  width: 20rem;
   cursor: pointer;
   background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid #b3b3b3;
 }
 
 .home .card:hover {
@@ -238,6 +256,12 @@ h1 {
 
 .home .card strong {
   display: block;
+}
+
+.home .card .description {
+  border-top: 1px solid #b3b3b3;
+  background-color: #282828;
+  padding: 1rem;
 }
 
 /* Raid Tab */
@@ -255,6 +279,11 @@ h1 {
 .raid .card img {
   width: 23rem;
   border: 1px solid #b3b3b3;
+  cursor: pointer;
+}
+
+.raid .card img:hover {
+  box-shadow: 0px 0px 10px #c2a878;
 }
 
 /* Infographic Tab */

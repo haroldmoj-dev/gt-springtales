@@ -8,109 +8,153 @@
     <title>SpringTales</title>
   </head>
   <body>
-    <div class="top">
-      <div class="navbar">
-        <ul class="left">
-          <li><a href="./index.html">SPRINGTALES</a></li>
-        </ul>
-        <svg
-          class="hamburger"
-          fill="none"
-          width="24"
-          height="20"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M4 18L20 18"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M4 12L20 12"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M4 6L20 6"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-        </svg>
-        <ul class="right">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/raid-runs.html">Raid Runs</a></li>
-          <li><a href="./pages/raid-nodes.html">Raid Nodes</a></li>
-          <li><a href="./pages/maps.html">World Maps</a></li>
-          <li><a href="./pages/infographic.html">Infographic Maker</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="middle">
-      <h1>SpringTales</h1>
-      <div>
-        <p>
-          This website contains some infographics for the game
-          <strong>Guardian Tales</strong>:
-        </p>
-        <div class="container home">
-          <a href="./pages/raid-runs.html">
-            <div
-              class="card"
-              style="background-image: url('./public/cards/raid-runs.png')"
-            >
-              <strong>Raid Recorded Runs</strong> Top recorded runs for each
-              raid season.
-            </div>
-          </a>
-          <a href="./pages/raid-nodes.html">
-            <div class="card">
-              <strong>Raid-Essential Myth Nodes</strong> List of myth nodes that
-              must be awakened for raid.
-            </div>
-          </a>
-          <a href="./pages/maps.html">
-            <div class="card">
-              <strong>World Maps</strong> Complete map of each world in
-              adventure mode.
-            </div>
-          </a>
-          <a href="./pages/infographic.html">
-            <div class="card">
-              <strong>Infographic Maker</strong> Generates an infographic image
-              for a raid team.
-            </div>
-          </a>
+    <div class="whole">
+      <div class="top">
+        <div class="navbar">
+          <ul class="left">
+            <li><a href="./index.html">SPRINGTALES</a></li>
+          </ul>
+          <svg
+            class="hamburger"
+            fill="none"
+            width="24"
+            height="20"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 18L20 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 6L20 6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <ul class="right">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/raid-runs.html">Raid Runs</a></li>
+            <li><a href="./pages/raid-nodes.html">Raid Nodes</a></li>
+            <li><a href="./pages/maps.html">World Maps</a></li>
+            <li><a href="./pages/infographic.html">Infographic Maker</a></li>
+          </ul>
         </div>
-        <p>
-          This project was created <strong>to practice web development</strong>.
-          The following concepts were applied to this website:
-        </p>
-        <ul>
-          <li>Basic html structure</li>
-          <li>Inputting images</li>
-          <li>Linking text to other pages</li>
-          <li>Linking text to external websites</li>
-          <li>Basic CSS</li>
-          <li>Flexbox implementation</li>
-          <li>Javascript logic</li>
-          <li>Mobile responsiveness</li>
-        </ul>
-        <p>
-          This was made possible through lessons learned from
-          <strong
-            ><a
-              href="https://www.theodinproject.com/about"
-              target="_blank"
-              rel="noopener noreferrer"
-              >The Odin Project</a
-            ></strong
-          >.
-        </p>
       </div>
+      <div class="middle">
+        <h1>SpringTales</h1>
+        <div class="container home">
+          <div class="left home">
+            <p>
+              This website contains some infographics for the game
+              <strong>Guardian Tales</strong>. This was created mainly
+              <strong>to practice web development</strong> which applies the
+              following concepts:
+            </p>
+            <ul>
+              <li>Basic html structure</li>
+              <li>Inputting images</li>
+              <li>Linking text to other pages</li>
+              <li>Linking text to external websites</li>
+              <li>Basic CSS</li>
+              <li>Flexbox implementation</li>
+              <li>Javascript logic</li>
+              <li>Mobile responsiveness</li>
+            </ul>
+            <p>
+              This was made possible through lessons learned from
+              <strong
+                ><a
+                  href="https://www.theodinproject.com/about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >The Odin Project</a
+                ></strong
+              >.
+            </p>
+          </div>
+          <div class="right home">
+            <a href="./pages/raid-runs.html">
+              <div
+                class="card"
+                style="
+                  background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.2),
+                      rgba(0, 0, 0, 0.2)
+                    ),
+                    url('./public/cards/raid-runs.png');
+                "
+              >
+                <div class="description">
+                  <strong>Raid Recorded Runs</strong> Top recorded runs for each
+                  raid season from YouTube and Discord.
+                </div>
+              </div>
+            </a>
+            <a href="./pages/raid-nodes.html">
+              <div
+                class="card"
+                style="
+                  background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.2),
+                      rgba(0, 0, 0, 0.2)
+                    ),
+                    url('./public/cards/raid-runs.png');
+                "
+              >
+                <div class="description">
+                  <strong>Raid-Essential Myth Nodes</strong> Myth nodes that
+                  must be awakened for each raid myth hero.
+                </div>
+              </div>
+            </a>
+            <a href="./pages/maps.html">
+              <div
+                class="card"
+                style="
+                  background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.2),
+                      rgba(0, 0, 0, 0.2)
+                    ),
+                    url('./public/cards/raid-runs.png');
+                "
+              >
+                <div class="description">
+                  <strong>World Maps</strong> Complete map of each world in
+                  adventure mode.
+                </div>
+              </div>
+            </a>
+            <a href="./pages/infographic.html">
+              <div
+                class="card"
+                style="
+                  background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.2),
+                      rgba(0, 0, 0, 0.2)
+                    ),
+                    url('./public/cards/raid-runs.png');
+                "
+              >
+                <div class="description">
+                  <strong>Infographic Maker</strong> Generates an infographic
+                  image for a raid team.
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">© 2025 Spring. All Rights Reserved.</div>
     </div>
   </body>
 </html>
