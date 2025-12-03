@@ -97,7 +97,7 @@ h2,
 p,
 ul,
 ol {
-  padding: 0 0 1rem;
+  margin-bottom: 1rem;
 }
 
 ul,
@@ -129,6 +129,7 @@ body .top {
 
 .navbar ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -143,13 +144,13 @@ body .top {
   margin: 0 auto;
 }
 
-h1.city {
-  margin: 2rem 1rem;
-  font-style: italic;
-}
-
 .city {
   margin: 1rem;
+}
+
+h1.city {
+  margin: 1.5rem 1rem;
+  font-style: italic;
 }
 
 /* Navbar */
@@ -215,7 +216,6 @@ h1.city {
 
 .raid .building img {
   width: 23rem;
-  height: auto;
   border: 1px solid #f8f8f8;
 }
 
@@ -228,7 +228,6 @@ h1.city {
   width: fit-content;
   margin: 0 auto;
   align-items: flex-start;
-  border-radius: 1rem;
 }
 
 .heroes,
