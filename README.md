@@ -1,6 +1,6 @@
 # SpringTales
 
-This website contains some infographics I made for the game "Guardian Tales":
+This website contains some infographics for the game "Guardian Tales":
 
 - Raid Recorded Runs - Top recorded runs for each raid season.
 - Raid-Essential Myth Nodes - List of myth nodes that must be awakened for raid.
