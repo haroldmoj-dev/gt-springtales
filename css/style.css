@@ -119,7 +119,7 @@ body .top {
 }
 
 .navbar {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   padding: 1rem;
   display: flex;
@@ -140,7 +140,7 @@ body .top {
 }
 
 .province {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -157,6 +157,9 @@ h1.city {
 .hamburger {
   color: #1ed761;
   cursor: pointer;
+  flex-shrink: 0;
+  min-width: 24px;
+  min-height: 20px;
 }
 
 /* Responsive styles */
