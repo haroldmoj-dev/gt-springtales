@@ -93,7 +93,7 @@ body {
 
 h1,
 h2 {
-  color: #e6e8e9;
+  color: #b3b3b3;
 }
 
 h1 {
@@ -120,7 +120,7 @@ a {
 /* Partitions */
 body .top {
   border-bottom: 1px solid #b3b3b3;
-  background-color: #111111;
+  background-color: #181818;
   position: sticky;
   top: 0;
 }
@@ -223,12 +223,13 @@ h1 {
 }
 
 .home .card {
-  background-color: #181818;
-  border: 1px solid #e6e8e9;
+  border: 1px solid #b3b3b3;
+  height: 200px;
   width: 200px;
   border-radius: 8px;
   padding: 1rem;
   cursor: pointer;
+  background-size: cover;
 }
 
 .home .card:hover {
@@ -253,12 +254,13 @@ h1 {
 
 .raid .card img {
   width: 23rem;
-  border: 1px solid #e6e8e9;
+  border: 1px solid #b3b3b3;
 }
 
 /* Infographic Tab */
 .infographic-maker {
   background-color: #181818;
+  border: 1px solid #b3b3b3;
   padding: 1rem;
   display: flex;
   gap: 1rem;
