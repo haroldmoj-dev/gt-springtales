@@ -3,6 +3,10 @@
   src: url(../public/fonts/Google_Sans_Code/GoogleSansCode-Medium.ttf);
 }
 
+* {
+  outline: 1px solid red;
+}
+
 /* CSS Reset */
 *,
 *::before,
@@ -68,11 +72,7 @@ h6 {
   isolation: isolate;
 }
 
-/* ALL, Html, Body */
-
-* {
-  /* outline: 1px solid red; */
-}
+/* Html, Body */
 
 html {
   font-size: 16px;
@@ -94,6 +94,10 @@ body {
 h1,
 h2 {
   color: #e6e8e9;
+}
+
+h1 {
+  margin: 0.5rem 0 1.5rem 0;
 }
 
 h2,
@@ -142,17 +146,13 @@ body .top {
   font-weight: bold;
 }
 
-.province {
+.middle {
   width: 95%;
   margin: 0 auto;
+  padding: 1rem;
 }
 
-.city {
-  margin: 1rem;
-}
-
-h1.city {
-  margin: 1.5rem 1rem;
+h1 {
   font-style: italic;
 }
 
@@ -189,7 +189,7 @@ h1.city {
 
 @media (min-width: 640px) {
   .navbar,
-  .province {
+  .middle {
     width: 85%;
   }
 }
@@ -208,24 +208,55 @@ h1.city {
   }
 }
 
-/* Raid */
-.city.raid {
+/* Home Tab */
+.home.container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.home.container a {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.home .card {
+  background-color: #181818;
+  border: 1px solid #e6e8e9;
+  width: 200px;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.home .card:hover {
+  box-shadow: 0px 0px 10px #c2a878;
+}
+
+.home .card strong {
+  display: block;
+}
+
+/* Raid Tab */
+.raid.container {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.raid .building {
+.raid .card {
   width: 23rem;
 }
 
-.raid .building img {
+.raid .card img {
   width: 23rem;
   border: 1px solid #e6e8e9;
 }
 
-/* Infographic Maker */
+/* Infographic Tab */
 .infographic-maker {
   background-color: #181818;
   padding: 1rem;
